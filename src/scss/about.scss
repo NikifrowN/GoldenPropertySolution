@@ -1,0 +1,156 @@
+.about {
+
+   background-image: url('@img/about/cover.jpg');
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: rem(56) 0 rem(221) 0;
+   }
+
+.about-content {
+   color: $light-text-color;
+
+   &__title {
+      position: relative;
+      margin-bottom: rem(62);
+
+      h2 {
+         font-weight: 800;
+         font-size: rem(67);
+         line-height: math.div(70, 67);
+         text-transform: uppercase;
+      }
+
+      p {
+         font-weight: 300;
+         font-size: rem(29);
+         line-height: math.div(70, 29);
+         text-transform: uppercase;
+      }
+
+      &::after {
+			content: "";
+			position: absolute;
+      	z-index: 1;
+			width: rem(462);
+			height: rem(2);
+			bottom: rem(-30);
+      	left: 50%;
+         border-radius: 50% / 50%;
+         transform: translateX(-50%);
+			background: $light-text-color;
+      }   
+   }
+
+   &__subtitle {
+      h5 {
+         font-weight: 700;
+         font-size: rem(56);
+         line-height: math.div(60, 56);
+         margin-bottom: rem(30);
+      }
+
+      p {
+         font-weight: 400;
+         line-height: math.div(33, 24);
+
+         span {
+            font-weight: 700;
+            color: $second-text-color;
+         }
+
+         &:last-child {
+            font-weight: 700;
+            line-height: math.div(29, 24);
+            color: $second-text-color;
+            margin-top: rem(10);
+         }
+      }
+   }
+}
+.about-form-cnt {
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   background: $yellow-background;
+   padding: rem(59) rem(40) rem(41) rem(60);
+   border-radius: rem(30);
+   text-align: center;
+
+   &__title {
+      p {
+         font-weight: 400;
+         font-size: rem(29);
+         line-height: math.div(42, 29);
+         letter-spacing: 0.1em;
+         text-transform: uppercase;
+         color: $mainColor;
+
+         &:first-child {
+            font-weight: 800;
+            font-size: 87px;
+            line-height: 106px;
+            margin-bottom: rem(-15);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+         }
+
+         &:last-child {
+            font-weight: 600;
+            margin-top: rem(10);
+            font-size: rem(20);
+            line-height: math.div(24, 20);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $light-text-color;
+         }
+      }
+   }
+
+   &__form {
+
+      button {
+         background: $mainColor;
+         box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+         border-radius: 43px;
+
+         color: $light-text-color;
+         padding: rem(21.5) rem(36.5);
+         font-weight: 600;
+         font-size: rem(18);
+         line-height: math.div(22, 18);
+
+         transition: all 0.3s ease;
+   
+         &:hover {
+            color: $mainColor;
+            background-color: $light-text-color;
+         }
+      }
+   }
+}
+.about-form {
+
+   &__inputs {
+      margin: rem(30) 0;
+
+      input {
+         width: rem(385);
+         font-weight: 200;
+         font-size: rem(19);
+         line-height: math.div(23, 19);
+         color: $grey-text-color;
+         padding: rem(20);
+         background: $light-text-color;
+         border-radius: rem(5);
+
+         &:not(:last-child) {
+            margin-right: rem(20);
+         }
+      }
+   }
+}
+}

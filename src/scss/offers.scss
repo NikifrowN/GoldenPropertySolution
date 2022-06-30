@@ -1,0 +1,127 @@
+.offers {
+
+   &__container {
+      padding: rem(108) 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__title {
+      font-weight: 900;
+      font-size: rem(44);
+      line-height: math.div(77, 44);
+      text-transform: uppercase;
+      position: relative;
+      padding-left: rem(30);
+
+      &::before {
+			content: "";
+			position: absolute;
+      	z-index: 1;
+			width: rem(5);
+			height: rem(263);
+			top: 50%;
+         transform: translateY(-50%);
+      	left: 0;
+			background: $dark-background;
+		}
+   }
+
+   &__content {
+      display: flex;
+      background: $yellow-background;
+      box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+      border-radius: 30px 0px 0px 30px;
+      position: relative;
+      padding: rem(50) 0 rem(50) rem(50);
+      gap: rem(180);
+
+      &::after {
+			content: "";
+         z-index: -1;
+			position: absolute;
+			width: 100vw;
+			height: 100%;
+			top: 0;
+      	left: 100%;
+			background: $yellow-background;
+         box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+		}
+   }
+}
+.offers-content {
+
+   &__item {
+      position: relative;
+
+      &:not(:last-child) {
+         &::after {
+         content: "";
+         z-index: 1;
+			position: absolute;
+			width: rem(2);
+			height: rem(146);
+			top: rem(40);
+      	right: rem(-90);
+			background: $light-text-color;
+         opacity: 0.2;
+         }
+      }
+   }
+}
+.offers-item {
+
+   &__title {
+      font-weight: 600;
+      font-size: rem(18);
+      line-height: math.div(22, 18);
+      text-align: center;
+      text-transform: uppercase;
+      color: $light-text-color;
+   }
+
+   &__data {
+      font-weight: 800;
+      font-size: rem(30);
+      line-height: math.div(37, 30);
+      position: relative;
+      margin: rem(25) 0;
+
+      span {
+         font-size: rem(70);
+         line-height: math.div(87, 70);
+      }
+
+      &::after {
+			content: "";
+         z-index: 1;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			top: 0;
+      	left: 0;
+			background: $light-text-color;
+      }
+
+      &::before {
+			content: "";
+         z-index: 1;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			bottom: 0;
+      	left: 0;
+			background: $light-text-color;
+      }
+   }
+
+   &__subtitle {
+      font-weight: 600;
+      font-size: rem(18);
+      line-height: math.div(22, 18);
+      text-align: center;
+      text-transform: uppercase;
+      color: $light-text-color;
+   }
+}

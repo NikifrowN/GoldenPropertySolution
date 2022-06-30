@@ -1,0 +1,57 @@
+.callback {
+   background-image: url('@img/callback/cover.jpg');
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: rem(80) 0 rem(90);
+   }
+
+   &__title {
+      font-weight: 800;
+      font-size: rem(44);
+      line-height: math.div(54, 44);
+      color: $light-text-color;
+      margin-bottom: rem(60);
+      text-align: center;
+
+      span {
+         font-weight: 400;
+         font-size: rem(30);
+         line-height: math.div(37, 30);
+      }
+   }
+
+   &__form {
+
+      input {
+         width: rem(385);
+         padding: rem(20);
+         font-weight: 400;
+         font-size: rem(14);
+         line-height: math.div(17, 14);
+         color: $dark-text-color;
+         border-radius: rem(5);
+         margin-right: rem(20);
+      }
+
+      button {
+         background: $yellow-background;
+         border-radius: rem(5);
+         padding: rem(17.5) rem(64.5);
+         font-weight: 700;
+         font-size: rem(18);
+         line-height: math.div(22, 18);
+         text-transform: uppercase;
+         transition: all 0.3s ease;
+
+         &:hover {
+            background: $light-yellow-background;
+         }
+      }
+   }
+}

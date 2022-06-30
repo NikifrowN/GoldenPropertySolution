@@ -1,0 +1,137 @@
+.header {
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: rem(60);
+	}
+
+	&__logo {
+		display: flex;
+		gap: rem(61);
+	}
+
+	&__contacts {
+		display: flex;
+		gap: rem(50);
+		align-items: center;
+	}
+}
+.logo {
+
+	&__left {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+      	z-index: 1;
+			width: rem(2);
+			height: rem(80);
+			bottom: 0;
+      	right: rem(-45);
+			border-radius: 50% / 50%;
+			background: $dark-background;
+		}
+	}
+
+	&__right {
+		font-weight: 400;
+		line-height: math.div(30, 24);
+		text-transform: uppercase;
+		margin-top: rem(15);
+		text-shadow: 
+			-0   -1px 0   #000000,
+			0   -1px 0   #000000,
+			-0    1px 0   #000000,
+			0    1px 0   #000000,
+			-1px -0   0   #000000,
+			1px -0   0   #000000,
+			-1px  0   0   #000000,
+			1px  0   0   #000000,
+			-1px -1px 0   #000000,
+			1px -1px 0   #000000,
+			-1px  1px 0   #000000,
+			1px  1px 0   #000000,
+			-1px -1px 0   #000000,
+			1px -1px 0   #000000,
+			-1px  1px 0   #000000,
+			1px  1px 0   #000000;
+	}
+}
+.logo-left {
+
+	&__top {
+		font-family: 'Work Sans';
+		font-weight: 900;
+		font-size: rem(80.7843);
+		line-height: math.div(95, 80.7843);
+		background-color: black;
+		background-image: linear-gradient(90deg, #2A2D3E 0%, #FFC633 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	&__bottom {
+		font-family: 'Work Sans';
+		font-weight: 700;
+		font-size: rem(12.9255);
+		line-height: math.div(15, 12.9255);
+		text-transform: uppercase;
+		text-shadow: 
+			-0   -1px 0   #000000,
+			0   -1px 0   #000000,
+			-0    1px 0   #000000,
+			0    1px 0   #000000,
+			-1px -0   0   #000000,
+			1px -0   0   #000000,
+			-1px  0   0   #000000,
+			1px  0   0   #000000,
+			-1px -1px 0   #000000,
+			1px -1px 0   #000000,
+			-1px  1px 0   #000000,
+			1px  1px 0   #000000,
+			-1px -1px 0   #000000,
+			1px -1px 0   #000000,
+			-1px  1px 0   #000000,
+			1px  1px 0   #000000;
+		margin-top: rem(-15);
+	}
+}
+.header-contacts {
+
+	&__phone {
+		font-weight: 600;
+		line-height: math.div(29, 24);
+		transition: all 0.3s ease;
+
+		a {
+			display: flex;
+			align-items: center;
+			gap: rem(10);
+		}
+
+		&:hover {
+			color: $second-text-color;
+		}
+	}
+
+	&__btn {
+		background: $yellow-background;
+		padding: rem(12.5) rem(46);
+		border-radius: rem(30);
+
+		font-family: 'Open Sans';
+		font-weight: 700;
+		font-size: rem(18);
+		line-height: math.div(25, 18);
+		color: #000000;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: $light-text-color;
+		}
+	}
+}
